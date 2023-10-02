@@ -1,6 +1,6 @@
 # Belajar Dasar Pemrograman Web
 
-<pre>
+<p>
 by @Dicoding
 by @IDCamp
-</pre>
+</p>
