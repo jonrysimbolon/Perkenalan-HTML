@@ -78,10 +78,10 @@ nav {
     padding: 5px;
 }
 
-.left{
+nav ul .left{
     float: left;
 }
 
-.right{
+nav ul .right{
     float: right;
 }
