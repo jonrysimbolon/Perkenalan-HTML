@@ -66,6 +66,8 @@ nav a:hover{
 nav li {
     display: inline;
     list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
     margin: 20px auto;
 }
 
