@@ -66,12 +66,11 @@ nav a:hover{
 nav li {
     display: inline;
     list-style-type: none;
-    margin: 20px;
+    padding: 20px;
 }
 
 nav ul {
     display: inline;
-    padding: 50px;
 }
 
 nav {
