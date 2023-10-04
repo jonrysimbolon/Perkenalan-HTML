@@ -63,11 +63,11 @@ nav a:hover{
     color: white;
 }
 
-nav li {
+/* nav li {
     display: inline;
     list-style-type: none;
     margin: 20px;
-}
+} */
 
 nav {
     background-color: #00a2c6;
