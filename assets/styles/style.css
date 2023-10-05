@@ -80,6 +80,9 @@ nav {
   background-color: #00a2c6;
   padding: 5px;
   overflow: auto;
+
+  position: sticky;
+  top: 0;
 }
 
 main {
@@ -100,6 +103,10 @@ aside {
   float: right;
   width: 25%;
   padding-left: 20px;
+}
+
+header {
+  display: inline;
 }
 
 @media screen and (max-width: 1000px) {
