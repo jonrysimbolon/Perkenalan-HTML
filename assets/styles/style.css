@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,17 +8,27 @@ body {
   padding: 0;
 }
 
-h2,
-h3 {
-  color: #00a2c6;
+header {
+  display: inline;
 }
 
-footer {
-  padding: 20px;
-  color: white;
+nav {
   background-color: #00a2c6;
-  text-align: center;
-  font-weight: bold;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
 }
 
 nav a {
@@ -29,6 +40,43 @@ nav a {
 
 nav a:hover {
   font-weight: bold;
+  font-size: 17px;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+aside {
+  flex: 1;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
 }
 
 .profile header {
@@ -42,75 +90,28 @@ nav a:hover {
   object-position: center;
 }
 
-.profile img {
-  width: 200px;
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
-  margin-top: 20px;
 }
 
-.jumbotron {
-  font-size: 20px;
-  padding: 60px;
-  background-color: #00c8eb;
-  text-align: center;
-  color: white;
+@media screen and (max-width: 1200px){
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
 }
 
-nav li {
-  display: inline;
-  list-style-type: none;
-  padding: 20px;
-}
+@media screen and (max-width: 768px){
+  nav ul {
+    justify-content: center;
+  }
 
-nav ul {
-  display: inline;
-  float: left;
-}
-
-nav {
-  background-color: #00a2c6;
-  padding: 5px;
-  
-  display: flex;
-  justify-content: space-between;
-
-  position: sticky;
-  top: 0;
-}
-
-main {
-  padding: 20px;
-  overflow: auto;
-}
-
-main {
-  padding: 20px;
-}
-
-#content {
-  float: left;
-  width: 75%;
-}
-
-aside {
-  float: right;
-  width: 25%;
-  padding-left: 20px;
-}
-
-header {
-  display: inline;
-}
-
-@media screen and (max-width: 1000px) {
-  #content,
-  aside {
-    width: 100%;
-    padding: 0;
+  main aside {
+    align-self: stretch;
   }
 }
